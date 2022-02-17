@@ -1,0 +1,207 @@
+body,h1,h2,h3,h4,h5,h6,a,span,p{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.bg-white{
+   border-radius: 30px;
+   font-weight: 700;
+   display: inline-block;
+   padding: 10px 15px;
+   background: #fff !important;
+}
+
+/************ Header css  *************/
+.main-header{
+    background:#e7e6e6 ;
+    z-index: 100;
+}
+.main-header img{
+width: 80px;
+}
+
+
+.main-header ul.my-menu li a{
+    color: #6c5c73;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.main-header ul.my-menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2%;
+    left: 5px;
+    top: 40px;
+    background: #fff;
+    transition: .4s;
+  }
+  .main-header ul.my-menu li:hover a::after {
+width: 80%;
+  }
+
+/************* Slider css  **************/
+.slider{
+    background:#edf6ff ;
+}
+
+
+
+.banner-image {
+	height: 550px;
+	width: 550px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	top: -40px;
+	right: -70px;
+}
+.banner-image img{
+    height: 100%;
+    width: 100%;
+   ;
+}
+.slider a.sujan {
+	display: inline-block;
+	border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+/********* Service section css  **************/
+.service-section{
+
+}
+
+.service-section .text1 h5{
+    color:#aaa7f2 ;
+}
+.service-section .text1 h1{
+position: relative;
+}
+.service-section .text1 h1::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 70px;
+	left: 5px;
+	top: 85px;
+	background:#9d8fec;
+}
+.service{
+
+}
+.service h3 {
+	font-size: 22px;
+	margin-bottom: 12px;
+}
+
+.service span {
+	height: 60px;
+	width: 60px;
+	background:#5252f0;
+	display: inline-block;
+	line-height: 60px;
+	font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+	border-radius: 50px 50px 50px 0;
+    position: relative;
+}
+
+.service span::after {
+	content: "";
+	height: 2px;
+	width: 40px;
+	position: absolute;
+	left: 0;
+	top: 65px;
+	background: #9d8fec;
+}
+/********** About section ********/
+.about{
+    background:linear-gradient(rgba(31, 31, 48, 0.029) ,rgba(22, 22, 55, 0.57) ), url(https://i.ibb.co/cxKxLMS/video-bg.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 220px;
+
+}
+.about span {
+	font-size: 40px;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+	display: inline-block;
+    border-radius: 50%;
+    color: rgba(0, 0, 255, 0.529);
+    line-height: 80px;
+    margin-top: 40px;
+    position: relative;
+}
+.about span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation:goutam 1.8s ease-out infinite ;
+}
+
+@keyframes goutam{
+0%{
+transform: scale(1);
+}
+
+50%{
+    transform: scale(2);
+    opacity: 0.7;
+}
+100%{
+    transform: scale(2.5);
+    opacity: 0;
+}
+
+}
+/* next  */
+.about span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation:goutam 5s ease-out 2.5s infinite ;
+}
+
+@keyframes goutam{
+0%{
+transform: scale(1);
+}
+
+50%{
+    transform: scale(2);
+    opacity: 0.7;
+}
+100%{
+    transform: scale(2.5);
+    opacity: 0;
+}
+
+}
+
+/**** end css  *****/
+
+
